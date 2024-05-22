@@ -19,13 +19,17 @@ class  Animal:
         self.species = species
         self.species = race
         self.species = gender
-        
-        def speak(self):
+      
+    def speak(self):
         if self.species == "dog":
             print("bark")
+        else:
+            print("I am not a dog!")
 
 Fido = Animal("dog", "pug", "female")
 print(Fido.alive)
 print(Fido.species)
-print(Fido.gender)
 Fido.speak()
+Fido.species ="cat"
+print(Fido.species)
+print(Fido.speak())
