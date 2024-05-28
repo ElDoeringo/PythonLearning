@@ -34,17 +34,19 @@ class  Animal:
     @classmethod
     def animalFromString(cls, aniString):
                 species, race, gender = aniString.split('-')
-                return cls(species, race, gender)
+                return (cls(species, race, gender))
  
 Fido = Animal("dog", "boston terrier", "male")
 Misser = Animal("cat", "norsk skovkat", "female")
+#print(Fido.__doc__)
+#Fido.speak()
+#print(Fido.speak.__doc__)
 newHorse = "horse-icelandic-female"
 Epona = Animal.animalFromString(newHorse)
-
 print(Epona.present)
 
 
-print(Fido.__doc__)
-Fido.speak()
-print(Fido.speak.__doc__)
+#print(Fido.__doc__)
+#Fido.speak()
+
 
