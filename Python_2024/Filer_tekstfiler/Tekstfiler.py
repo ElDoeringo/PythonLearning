@@ -1,4 +1,5 @@
 lo = open('Lorem.txt', 'r')
 print(lo.name)
 content = lo.read()
+print(content)
 lo.close()
