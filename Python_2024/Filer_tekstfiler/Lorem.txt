@@ -1,2 +1,1 @@
-Hello, this is a test file.
-This file will be read by a Python script.
+"What matters most is how well you walk thorugh the fire" - Charles Bukowski 
