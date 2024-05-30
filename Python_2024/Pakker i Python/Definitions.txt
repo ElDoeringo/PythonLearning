@@ -41,7 +41,7 @@ Organization: Packages help in structuring code, making it easier to navigate an
 Collaboration: Using standard and third-party packages ensures that you don’t have to reinvent the wheel for common tasks, fostering better collaboration.
 What are Modules in Python?
 1. Definition:
-
+*******************************************************************************************************************************************************************************
 A module in Python is simply a file containing Python code. It can define functions, classes, and variables. A module allows you to logically organize your Python code.
 2. Example:
 
