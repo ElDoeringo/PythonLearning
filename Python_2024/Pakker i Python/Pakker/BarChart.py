@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt  # Import the pyplot module from matplotlib
 import numpy as np  # Import the NumPy library
 data = [20, 35, 30, 35, 27] # Define the data for the bar chart
 plac = np.arange(len(data)) # Generate an array with the positions for the bars on the x-axis
-width = 0.35 Define the width of the bars # Create a bar chart with the data provided
+width = 0.35 #Define the width of the bars # Create a bar chart with the data provided
 plt.bar(plac, data, width) # Display the bar chart
 
 #An array is a data structure that consists of a collection of elements, each identified by an array index or key. 
