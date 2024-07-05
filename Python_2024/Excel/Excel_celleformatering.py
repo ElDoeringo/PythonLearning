@@ -1,8 +1,19 @@
 import openpyxl as xl  # Import the openpyxl library as xl for working with Excel files
 import datetime as dt  # Import the datetime module as dt for date and time operations
 import numbers  # Import the numbers module for type checking
-
+import sys
 from openpyxl.styles import PatternFill, Border, Side, Font
+
+try:
+    wb = xl.load_workbook(sys.argv[1])
+except FileNotFoundError as e:
+    print(e)
+except NameError as e:
+    print('Fejl')
+    exit()
+
+ 
+print() #should print the name of the Excel file
 # Load the workbook named 'Timeseddel.xlsx'
 wb = xl.load_workbook('Timesheet.xlsx')
 
