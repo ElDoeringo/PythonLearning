@@ -26,9 +26,9 @@ while not isinstance(sheet.cell(column=8, row=fromDate).value, str):
     fromDate -= 1
     if isinstance(sheet.cell(column=6, row=fromDate).value, numbers.Real):
         sum += sheet.cell(column=6, row=fromDate).value
-
+print(sum)
 # Print the type of the value in cell H150
 print(type(sheet['H150'].value))
 
 # Save the workbook with a new name 'TimeseddelJuli.xlsx'
-wb.save('TimeseddelJuli.xlsx')
+wb.save('Timesheet.xlsx')
