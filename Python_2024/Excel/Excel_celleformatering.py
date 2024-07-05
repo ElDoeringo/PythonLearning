@@ -2,6 +2,7 @@ import openpyxl as xl  # Import the openpyxl library as xl for working with Exce
 import datetime as dt  # Import the datetime module as dt for date and time operations
 import numbers  # Import the numbers module for type checking
 
+from openpyxl.styles import PatternFill, Border, Side, Font
 # Load the workbook named 'Timeseddel.xlsx'
 wb = xl.load_workbook('Timesheet.xlsx')
 
@@ -27,7 +28,10 @@ while not(isinstance(sheet.cell(column=8, row=fromDate).value, str)):
     if isinstance(sheet.cell(column=6, row=fromDate).value, numbers.Real):
         sum += sheet.cell(column=6, row=fromDate).value
 
-sheet['H1'] = 'Udbetalt'
-
-# Save the workbook with a new name 'TimeseddelJuli.xlsx'
+sheet['E1'] = 'Udbetalt'
+sheet['E1'].font = Font(name='Calibri', size=11, bold=True, italic=False)
+sheet.cell(column=8, row=toDate).value = sum 
+sheet.cell(column=8, row=toDate).fill = PatternFill(fill_type='solid', start_color='00FF00')
+sheet.cell(column=8, row=toDate).border = Border(bottom=Side(border_style='thick'))
+# Save the workbook with a new name 'Timesheet.xlsx'
 wb.save('Timesheet.xlsx')
