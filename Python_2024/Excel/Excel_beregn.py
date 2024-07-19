@@ -3,7 +3,7 @@ import datetime as dt  # Import the datetime module as dt for date and time oper
 import numbers  # Import the numbers module for type checking
 
 # Load the workbook named 'Timeseddel.xlsx'
-wb = xl.load_workbook('Timesheet.xlsx')
+wb = xl.load_workbook('Python_2024/Excel/Timesheet.xlsx')
 
 # Access the first sheet in the workbook
 sheet = wb[wb.sheetnames[0]]
